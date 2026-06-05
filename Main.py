@@ -4,13 +4,25 @@ from barcode_handler import BarcodeHandler
 from qr_handler import QRHandler
 
 def display_menu(manager):
-    print("\n" + "="*50)
-    print("📱 Coffee Shop Menu")
-    print("="*50)
-    for category, items in manager.menu.items():
-        print(f"\n🍽️ {category.upper()}:")
-        for item in items:
-            print(f"  {item['id']}. {item['name']} - {item['price']:,} IRR")
+    print("\n" + "="*60)
+    print("📱 COFFEE SHOP MENU")
+    print("="*60)
+    
+    # Define the display order and Persian names for categories
+    category_names = {
+        'hot_drinks': '☕ Hot Drinks (Espresso & Brew)',
+        'cold_drinks': '🧊 Cold Drinks (Iced Coffee & Detox)',
+        'desserts': '🍰 Desserts, Cakes & Ice Cream',
+        'breakfast': '🍳 Breakfast & Snacks'
+    }
+    
+    for category, display_name in category_names.items():
+        if category in manager.menu:
+            print(f"\n{display_name}:")
+            for item in manager.menu[category]:
+                print(f"  {item['id']}. {item['name']} - {item['price']:,} IRR")
+        else:
+            print(f"\n⚠️ Warning: Category '{category}' not found in menu file.")
 
 def main():
     manager = OrderManager()
