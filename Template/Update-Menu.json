@@ -1,0 +1,27 @@
+{
+    "hot_drinks": [
+        {"id": 1, "name": "Espresso (Single/Double)", "price": 100000},
+        {"id": 2, "name": "Americano", "price": 110000},
+        {"id": 3, "name": "Cafe Latte / Cappuccino", "price": 135000},
+        {"id": 4, "name": "Caramel Macchiato", "price": 160000},
+        {"id": 5, "name": "Turkish / French Coffee", "price": 110000}
+    ],
+    "cold_drinks": [
+        {"id": 6, "name": "Iced Latte / Iced Americano", "price": 140000},
+        {"id": 7, "name": "Affogato", "price": 150000},
+        {"id": 8, "name": "Mojito / Lemonade", "price": 120000},
+        {"id": 9, "name": "Smoothie (Strawberry/Mango)", "price": 160000}
+    ],
+    "desserts": [
+        {"id": 10, "name": "Daily Cake (Carrot/Chocolate)", "price": 115000},
+        {"id": 11, "name": "New York / Nutella Cheesecake", "price": 145000},
+        {"id": 12, "name": "Waffle with Nutella & Fruits", "price": 165000},
+        {"id": 13, "name": "Croissant (Plain/Nutella)", "price": 85000}
+    ],
+    "breakfast": [
+        {"id": 14, "name": "English Breakfast", "price": 270000},
+        {"id": 15, "name": "Bacon or Sucuk Omelette", "price": 165000},
+        {"id": 16, "name": "Panini (Chicken/Turkey)", "price": 190000},
+        {"id": 17, "name": "Caesar Salad", "price": 220000}
+    ]
+}
